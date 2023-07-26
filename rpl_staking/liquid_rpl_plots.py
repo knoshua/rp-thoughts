@@ -87,7 +87,6 @@ def main():
     # find the point at which rewards APR is now better than current; that portion is insensitive
     total_proposal_weight = df['proposal_rule_weight'].sum()
     tempdf = df.copy()
-    counter = 0
     for i in range(len(tempdf)):
         row = tempdf.iloc[i].copy()
         if row['category'] != 'potential_sensitives':
